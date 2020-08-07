@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>List of my Skills</h2>
+            <% console.log("my skills are", myskills) %>
+
+        <ul>
+        <% myskills.forEach(function(t){ %>
+            <li> <a href="/skills/<%= t.id %>"><%= t.name%></a>, <%= t.type%>, <%= t.level%></li>
+        <% }) %>
+        </ul>
+        <a href="/skills/newskill">Add Skill</a>
+        
+    </body>
+</html>
